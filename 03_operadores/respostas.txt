@@ -1,0 +1,13 @@
+16. Usar parenteses: n = (z + y) * x;
+17. idade invalida: idade <= 0           | idade valida: idade > 0
+    sexo invalido: sexo != 'f' && sexo != 'm'   | sexo valido: sexo == 'f' || sexo == 'm'
+    idade ou sexo invalidos: idade <= 0 || (sexo != 'f' && sexo != 'm')
+    idade e sexo validos: idade > 0 && (sexo == 'f' || sexo == 'm')
+    a partir de 18: idade >= 18          | de 20 a 30: idade >= 20 && idade <= 30
+    par: n % 2 == 0   | impar: n % 2 != 0
+    divisivel por 9: n % 9 == 0   | divisivel por 5: n % 5 == 0
+18. && tem prioridade sobre ||. A segunda vira ((idade > 0 && sexo == 'F') || sexo == 'M').
+    Contra-exemplo: idade = -3, sexo = 'M' -> a 2a da verdadeiro, a 1a da falso.
+19. a = 7 atribui 7 a variavel a; a == 7 compara se a vale 7 (resultado verdadeiro/falso).
+20. C/C++ avalia (-5 <= x) primeiro, que vira 0 ou 1, e depois compara com 5 (sempre verdadeiro).
+    Correta: x >= -5 && x <= 5

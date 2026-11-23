@@ -4,7 +4,7 @@ Exercício 6. Média ponderada (pesos 7, 2 e 1) de 3 notas e conceito A a E, evi
 #include <iostream>
 using namespace std;
 
-// Faixas usadas:
+// Faixas usadas (ajuste se a tabela da aula for diferente):
 // A: >= 8 | B: >= 7 | C: >= 6 | D: >= 5 | E: < 5
 int main()
 {

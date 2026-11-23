@@ -1,0 +1,12 @@
+{
+  // Extensao Code Runner (botao de "play"): roda no terminal para o cin funcionar
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++17 -Wall $fileName -o $fileNameWithoutExt.exe && ./$fileNameWithoutExt.exe"
+  },
+  "code-runner.executorMapByFileExtension": {},
+  "[cpp]": { "editor.tabSize": 2 },
+  "C_Cpp.default.cppStandard": "c++17",
+  "files.encoding": "utf8"
+}

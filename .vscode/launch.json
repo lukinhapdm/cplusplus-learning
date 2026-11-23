@@ -1,0 +1,18 @@
+{
+  // F5 compila e depura o arquivo aberto (pontos de parada, variaveis etc.)
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Depurar arquivo atual",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+      "cwd": "${fileDirname}",
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "osx": { "MIMode": "lldb" },
+      "windows": { "program": "${fileDirname}\\${fileBasenameNoExtension}.exe" },
+      "preLaunchTask": "Compilar C++ (arquivo atual)"
+    }
+  ]
+}

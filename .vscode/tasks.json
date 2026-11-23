@@ -1,0 +1,28 @@
+{
+  // Ctrl+Shift+B compila o arquivo .cpp aberto no editor
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar C++ (arquivo atual)",
+      "type": "shell",
+      "command": "g++",
+      "args": ["-std=c++17", "-Wall", "-g", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}.out"],
+      "windows": {
+        "args": ["-std=c++17", "-Wall", "-g", "-fexec-charset=CP850", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"]
+      },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      // Compila e executa no terminal (aceita cin normalmente)
+      "label": "Compilar e executar",
+      "type": "shell",
+      "command": "\"${fileDirname}/${fileBasenameNoExtension}.out\"",
+      "windows": { "command": "& '${fileDirname}\\${fileBasenameNoExtension}.exe'" },
+      "options": { "cwd": "${fileDirname}" },
+      "dependsOn": "Compilar C++ (arquivo atual)",
+      "presentation": { "focus": true, "panel": "shared", "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}

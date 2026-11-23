@@ -1,0 +1,8 @@
+# executaveis gerados ao compilar
+*.out
+*.exe
+*.o
+# arquivos criados pelos exercicios de arquivos
+*.dat
+*.txt
+!03_operadores/*.txt

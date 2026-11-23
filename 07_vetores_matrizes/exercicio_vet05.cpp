@@ -5,12 +5,15 @@
 #include <cmath>
 using namespace std;
 
+const int MAX = 100;   // tamanho maximo (C++ padrao nao aceita vetor com tamanho lido)
+
 int main()
 {
   int n;
   float soma = 0, m, s = 0;
   cout << "Numero de dias N: "; cin >> n;
-  float t[n];
+  if (n > MAX) n = MAX;
+  float t[MAX];
   for (int i = 0; i < n; i++) { cout << "Temperatura dia " << i + 1 << ": "; cin >> t[i]; soma += t[i]; }
   m = soma / n;                                   // media
   for (int i = 0; i < n; i++) s += (t[i] - m) * (t[i] - m);   // soma dos quadrados das diferencas

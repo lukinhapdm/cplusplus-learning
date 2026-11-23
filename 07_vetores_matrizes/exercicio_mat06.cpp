@@ -4,11 +4,15 @@
 #include <iostream>
 using namespace std;
 
+const int MAX = 20;   // maximo de linhas e colunas
+
 int main()
 {
   int m, n;
   cout << "Linhas e colunas: "; cin >> m >> n;
-  int mat[m][n], qtd = 0;   // qtd = quantos ja foram inseridos
+  if (m > MAX) m = MAX;
+  if (n > MAX) n = MAX;
+  int mat[MAX][MAX], qtd = 0;   // qtd = quantos ja foram inseridos
   for (int i = 0; i < m; i++)
     for (int j = 0; j < n; j++) {
       int x; bool repetido;

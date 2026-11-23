@@ -5,6 +5,8 @@
 #include <climits>
 using namespace std;
 
+const int MAX = 100;   // tamanho maximo (C++ padrao nao aceita vetor com tamanho lido)
+
 void doisMaiores(int v[], int n, int &m1, int &m2)
 {
   m1 = m2 = INT_MIN;   // comeca com o menor int possivel
@@ -18,7 +20,8 @@ int main()
 {
   int n, m1, m2;
   cout << "Tamanho: "; cin >> n;
-  int v[n];
+  if (n > MAX) n = MAX;
+  int v[MAX];
   cout << "Valores: "; for (int i = 0; i < n; i++) cin >> v[i];
   doisMaiores(v, n, m1, m2);
   cout << "Maior: " << m1 << " | Segundo maior: " << m2 << endl;

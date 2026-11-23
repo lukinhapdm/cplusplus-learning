@@ -4,14 +4,18 @@
 #include <iostream>
 using namespace std;
 
+const int MAX = 20;   // maximo de linhas e colunas
+
 int main()
 {
   int m, n;
   cout << "Linhas e colunas: "; cin >> m >> n;
-  int mat[m][n], tot = m * n;
+  if (m > MAX) m = MAX;
+  if (n > MAX) n = MAX;
+  int mat[MAX][MAX], tot = m * n;
   for (int i = 0; i < m; i++) for (int j = 0; j < n; j++) cin >> mat[i][j];
   // copia para um vetor para facilitar a contagem
-  int v[tot]; bool contado[tot];
+  int v[MAX * MAX]; bool contado[MAX * MAX];
   for (int k = 0; k < tot; k++) { v[k] = mat[k / n][k % n]; contado[k] = false; }
   for (int k = 0; k < tot; k++) {
     if (contado[k]) continue;   // ja foi contado antes

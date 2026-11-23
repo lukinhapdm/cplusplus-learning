@@ -1,0 +1,6 @@
+16. n = z + y * x; -> o que acrescentar para somar z com y e depois multiplicar por x?
+17. Escrever expressões: idade inválida (<=0), idade válida, sexo inválido/válido, idade ou sexo inválidos,
+    idade e sexo válidos, idade >= 18, idade de 20 a 30, par, ímpar, divisível por 9, divisível por 5.
+18. Por que (idade > 0 && (sexo=='F' || sexo=='M')) != (idade > 0 && sexo=='F' || sexo=='M')? Contra-exemplo.
+19. Diferença entre a = 7 e a == 7?
+20. Por que -5 <= x <= 5 está incorreta em C/C++? Qual a correta?
