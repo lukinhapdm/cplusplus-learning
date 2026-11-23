@@ -1,0 +1,28 @@
+16. n = z + y * x; -> o que acrescentar para somar z com y e depois multiplicar por x?
+
+Usar parenteses: n = (z + y) * x;
+
+17. Escrever expressões: idade inválida (<=0), idade válida, sexo inválido/válido, idade ou sexo inválidos,
+    idade e sexo válidos, idade >= 18, idade de 20 a 30, par, ímpar, divisível por 9, divisível por 5.
+
+idade invalida: idade <= 0           | idade valida: idade > 0
+sexo invalido: sexo != 'f' && sexo != 'm'   | sexo valido: sexo == 'f' || sexo == 'm'
+idade ou sexo invalidos: idade <= 0 || (sexo != 'f' && sexo != 'm')
+idade e sexo validos: idade > 0 && (sexo == 'f' || sexo == 'm')
+a partir de 18: idade >= 18          | de 20 a 30: idade >= 20 && idade <= 30
+par: n % 2 == 0   | impar: n % 2 != 0
+divisivel por 9: n % 9 == 0   | divisivel por 5: n % 5 == 0
+
+18. Por que (idade > 0 && (sexo=='F' || sexo=='M')) != (idade > 0 && sexo=='F' || sexo=='M')? Contra-exemplo.
+
+&& tem prioridade sobre ||. A segunda vira ((idade > 0 && sexo == 'F') || sexo == 'M').
+Contra-exemplo: idade = -3, sexo = 'M' -> a 2a da verdadeiro, a 1a da falso.
+
+19. Diferença entre a = 7 e a == 7?
+
+a = 7 atribui 7 a variavel a; a == 7 compara se a vale 7 (resultado verdadeiro/falso).
+
+20. Por que -5 <= x <= 5 está incorreta em C/C++? Qual a correta?
+
+C/C++ avalia (-5 <= x) primeiro, que vira 0 ou 1, e depois compara com 5 (sempre verdadeiro).
+Correta: x >= -5 && x <= 5
