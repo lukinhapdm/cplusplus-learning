@@ -6,3 +6,4 @@
 *.dat
 *.txt
 !03_operadores/*.txt
+*.huf
