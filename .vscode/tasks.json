@@ -6,9 +6,14 @@
       "label": "Compilar C++ (arquivo atual)",
       "type": "shell",
       "command": "g++",
-      "args": ["-std=c++17", "-Wall", "-g", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}.out"],
+      // -pthread: threads (pastas 53-59); -fopenmp: OpenMP (pasta 55); -lws2_32: sockets no Windows (pasta 59)
+      "args": ["-std=c++17", "-Wall", "-g", "-pthread", "-fopenmp", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}.out"],
       "windows": {
-        "args": ["-std=c++17", "-Wall", "-g", "-fexec-charset=CP850", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"]
+        "args": ["-std=c++17", "-Wall", "-g", "-fexec-charset=CP850", "-fopenmp", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe", "-lws2_32"]
+      },
+      "osx": {
+        // o clang da Apple nao tem OpenMP por padrao (instale com: brew install libomp)
+        "args": ["-std=c++17", "-Wall", "-g", "-pthread", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}.out"]
       },
       "group": { "kind": "build", "isDefault": true },
       "problemMatcher": ["$gcc"]

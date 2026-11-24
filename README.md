@@ -23,6 +23,9 @@ Code, examples and solved exercises in C++ studied throughout my undergraduate d
 | 42–45 | Brute force and backtracking, greedy algorithms, divide and conquer, dynamic programming | ![DAA](https://img.shields.io/badge/DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS-d1661b?style=flat-square) |
 | 46–48 | Graphs: concepts and types, walks, connectivity, Euler/Hamilton circuits, isomorphism, graph search and topological sort | ![DAA](https://img.shields.io/badge/DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS-d1661b?style=flat-square) |
 | 49–52 | Spanning trees and shortest paths, independent sets, cliques and coloring, planarity, P, NP and NP-complete problems | ![DAA](https://img.shields.io/badge/DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS-d1661b?style=flat-square) |
+| 53–55 | Types of parallelism and performance (speedup, efficiency, Amdahl/Gustafson), shared-memory parallelism with threads and OpenMP | ![PDS](https://img.shields.io/badge/PARALLEL%20AND%20DISTRIBUTED%20SYSTEMS-0e8a7e?style=flat-square) |
+| 56 | Distributed-memory parallelism with MPI | ![PDS](https://img.shields.io/badge/PARALLEL%20AND%20DISTRIBUTED%20SYSTEMS-0e8a7e?style=flat-square) |
+| 57–59 | Distributed coordination (logical clocks, mutual exclusion, leader election), distributed file systems, sockets and remote method invocation (RMI) | ![PDS](https://img.shields.io/badge/PARALLEL%20AND%20DISTRIBUTED%20SYSTEMS-0e8a7e?style=flat-square) |
  
 Each folder contains `exemploXX` files (lesson examples) and `exercicioXX` files (commented solutions).
  
@@ -41,5 +44,14 @@ Each folder contains `exemploXX` files (lesson examples) and `exercicioXX` files
 > **Windows:** if the Play button fails with an `&&` error, your terminal is the legacy PowerShell. Use the **Compilar e executar** task (works in any terminal) or switch the default terminal to *Git Bash* / *PowerShell 7*. The task also fixes accented characters in the output.
  
 From the terminal: `g++ -std=c++17 file.cpp -o program && ./program`
- 
+
+### Parallel and distributed systems (folders 53–59)
+
+- **Threads (53, 54, 57–59):** add `-pthread` → `g++ -std=c++17 -pthread file.cpp -o program`.
+- **OpenMP (55):** add `-fopenmp` (the *Compilar e executar* task already does it on Windows and Linux; on macOS install `libomp` first). The number of threads can be set with the `OMP_NUM_THREADS` environment variable.
+- **Sockets (59):** on Windows also link Winsock with `-lws2_32` (the task already does it).
+- **MPI (56):** install an MPI implementation and use its compiler/launcher instead of g++:
+  - **Linux:** `sudo apt install openmpi-bin libopenmpi-dev` → `mpic++ -std=c++17 file.cpp -o program && mpirun -np 4 ./program`
+  - **macOS:** `brew install open-mpi` (same commands)
+  - **Windows:** install [MS-MPI](https://learn.microsoft.com/message-passing-interface/microsoft-mpi) (runtime and SDK) and, in MSYS2, `pacman -S mingw-w64-ucrt-x86_64-msmpi` → `g++ -std=c++17 file.cpp -o program -lmsmpi && mpiexec -n 4 program.exe`
  

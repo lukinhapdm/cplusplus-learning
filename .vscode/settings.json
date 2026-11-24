@@ -3,7 +3,7 @@
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
   "code-runner.executorMap": {
-    "cpp": "cd $dir && g++ -std=c++17 -Wall $fileName -o $fileNameWithoutExt.exe && ./$fileNameWithoutExt.exe"
+    "cpp": "cd $dir && g++ -std=c++17 -Wall -pthread $fileName -o $fileNameWithoutExt.exe && ./$fileNameWithoutExt.exe"
   },
   "code-runner.executorMapByFileExtension": {},
   "[cpp]": { "editor.tabSize": 2 },
