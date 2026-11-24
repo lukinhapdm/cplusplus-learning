@@ -42,3 +42,4 @@ Each folder contains `exemploXX` files (lesson examples) and `exercicioXX` files
  
 From the terminal: `g++ -std=c++17 file.cpp -o program && ./program`
  
+ 
