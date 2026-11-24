@@ -6,20 +6,24 @@ Code, examples and solved exercises in C++ studied throughout my undergraduate d
  
 ## Topics
  
-| Folder | Topic |
-|---|---|
-| 01–10 | Fundamentals: introduction, variables, operators, conditionals, functions, loops, arrays/matrices, strings, structs, files |
-| 11 | Abstract data types, pointers and functions |
-| 12–14 | Stack, queue and linked lists |
-| 15–16 | Binary trees (BST/AVL) and hashing |
-| 17 | Sorting algorithms |
-| 18–23 | OOP: classes, inheritance, overloading, friend/virtual functions, polymorphism, templates and exceptions |
-| 24–25 | Searching: sequential and binary search, hashing |
-| 26–29 | Binary search trees, templates and STL, tree balancing (binary-search technique, DSW), AVL trees |
-| 30–33 | Digital trees (Trie, Patricia), heaps, red-black trees, sets and maps |
-| 34–35 | Secondary memory, B-trees and B*-trees |
-| 36–38 | String processing (brute force, inverted files), exact matching (Shift-And, BM, BMH) and data compression |
-
+| Folder | Topic | Course |
+|---|---|---|
+| 01–10 | Fundamentals: introduction, variables, operators, conditionals, functions, loops, arrays/matrices, strings, structs, files | ![PL](https://img.shields.io/badge/PROGRAMMING%20LOGIC-2ea043?style=flat-square) |
+| 11 | Abstract data types, pointers and functions | ![ADS I](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20I-1f6feb?style=flat-square) |
+| 12–14 | Stack, queue and linked lists | ![ADS I](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20I-1f6feb?style=flat-square) |
+| 15–16 | Binary trees (BST/AVL) and hashing | ![ADS I](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20I-1f6feb?style=flat-square) |
+| 17 | Sorting algorithms | ![ADS I](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20I-1f6feb?style=flat-square) |
+| 18–23 | OOP: classes, inheritance, overloading, friend/virtual functions, polymorphism, templates and exceptions | ![ADS I](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20I-1f6feb?style=flat-square) |
+| 24–25 | Searching: sequential and binary search, hashing | ![ADS II](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20II-8250df?style=flat-square) |
+| 26–29 | Binary search trees, templates and STL, tree balancing (binary-search technique, DSW), AVL trees | ![ADS II](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20II-8250df?style=flat-square) |
+| 30–33 | Digital trees (Trie, Patricia), heaps, red-black trees, sets and maps | ![ADS II](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20II-8250df?style=flat-square) |
+| 34–35 | Secondary memory, B-trees and B*-trees | ![ADS II](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20II-8250df?style=flat-square) |
+| 36–38 | String processing (brute force, inverted files), exact matching (Shift-And, BM, BMH) and data compression | ![ADS II](https://img.shields.io/badge/ALGORITHMS%20AND%20DATA%20STRUCTURES%20II-8250df?style=flat-square) |
+| 39–41 | Algorithm analysis (operation counting, math review, recursion), asymptotic complexity (O, Ω, Θ, o, ω) and recurrences (expansion, substitution, recursion trees, master theorem) | ![DAA](https://img.shields.io/badge/DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS-d1661b?style=flat-square) |
+| 42–45 | Brute force and backtracking, greedy algorithms, divide and conquer, dynamic programming | ![DAA](https://img.shields.io/badge/DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS-d1661b?style=flat-square) |
+| 46–48 | Graphs: concepts and types, walks, connectivity, Euler/Hamilton circuits, isomorphism, graph search and topological sort | ![DAA](https://img.shields.io/badge/DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS-d1661b?style=flat-square) |
+| 49–52 | Spanning trees and shortest paths, independent sets, cliques and coloring, planarity, P, NP and NP-complete problems | ![DAA](https://img.shields.io/badge/DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS-d1661b?style=flat-square) |
+ 
 Each folder contains `exemploXX` files (lesson examples) and `exercicioXX` files (commented solutions).
  
 ## Running in VS Code
