@@ -19,7 +19,7 @@ Code, examples and solved exercises in C++ studied throughout my undergraduate d
 | 30–33 | Digital trees (Trie, Patricia), heaps, red-black trees, sets and maps |
 | 34–35 | Secondary memory, B-trees and B*-trees |
 | 36–38 | String processing (brute force, inverted files), exact matching (Shift-And, BM, BMH) and data compression |
- 
+
 Each folder contains `exemploXX` files (lesson examples) and `exercicioXX` files (commented solutions).
  
 ## Running in VS Code
